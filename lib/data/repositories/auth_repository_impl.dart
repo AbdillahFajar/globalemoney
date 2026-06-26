@@ -92,6 +92,14 @@ class AuthRepositoryImpl implements AuthRepository {
   @override
   Future<String?> getSavedToken() => _local.getToken();
 
+  //Menambahkan method restoreApiToken untukMembaca token dari SecureStorage (_local) dan langsung menetapkannya ke ApiClient via _remote.setAuthToken(). 
+  //Tidak melempar exception — jika tidak ada token tersimpan, ApiClient tetap tanpa token (user belum login).
+  @override
+  Future<void> restoreApiToken() async {
+    final token = await _local.getToken();
+    if (token != null) _remote.setAuthToken(token);
+  }
+
   @override
   Future<UserEntity?> getSavedUser() async {
     final json = await _local.getUserJson();
