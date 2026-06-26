@@ -11,4 +11,5 @@ abstract class AuthRepository {
   Future<UserEntity?> getSavedUser();
   Future<void> setAuthVerified(bool verified);
   Future<bool> isAuthVerified();
+  Future<void> restoreApiToken(); //Method baru di domain layer agar AuthBloc bisa memanggil restoreApiToken tanpa mengetahui detail implementasi (clean architecture).
 }
