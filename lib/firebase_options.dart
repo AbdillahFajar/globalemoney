@@ -47,28 +47,29 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyA-qMpfD6HlndAeU56JtAqwkemIAGcjfHE',
-    appId: '1:170804828488:android:e26d968d7bb013b74e3b7d',
-    messagingSenderId: '170804828488',
-    projectId: 'emoneyapp',
-    storageBucket: 'emoneyapp.firebasestorage.app',
+    apiKey: 'AIzaSyDB-cwMAZ0JB-aTBw1CIU7LL9tqAm1DYnA',
+    appId: '1:585585062118:android:c0fe1cd4ffa43311dccb27',
+    messagingSenderId: '585585062118',
+    projectId: 'dompetkampusglobal',
+    storageBucket: 'dompetkampusglobal.firebasestorage.app',
   );
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyA46uBUvmVQKsSL7HIXZG58MD9jXQCFX7c',
-    appId: '1:948878883710:ios:5363ad2b9fbe06b2a0512f',
-    messagingSenderId: '948878883710',
-    projectId: 'fir-emoney-e9256',
-    storageBucket: 'fir-emoney-e9256.firebasestorage.app',
-    iosBundleId: 'com.kampus.dompetKampusGlobal',
+    apiKey: 'AIzaSyCJ-RZxRAnXp5H3dYGds2rRCJJZdFNXF9U',
+    appId: '1:585585062118:ios:343652eb4ae0705fdccb27',
+    messagingSenderId: '585585062118',
+    projectId: 'dompetkampusglobal',
+    storageBucket: 'dompetkampusglobal.firebasestorage.app',
+    androidClientId: '585585062118-5taabevc3r2celdl52ncqtsahg2no148.apps.googleusercontent.com',
+    iosClientId: '585585062118-3un4fuj4glcrojsvo2nfrsp2st8up2b4.apps.googleusercontent.com',
+    iosBundleId: 'com.abdillahfajar.dompetkampusglobal',
   );
-
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyD65rw6HTp9F-Fnv3boiIMyJTQinP88BXY',
-    appId: '1:170804828488:web:86f8c37a3d1d30834e3b7d',
-    messagingSenderId: '170804828488',
-    projectId: 'emoneyapp',
-    authDomain: 'emoneyapp.firebaseapp.com',
-    storageBucket: 'emoneyapp.firebasestorage.app',
-    measurementId: 'G-MBZMW96385',
+    apiKey: 'AIzaSyAlKb2tAVz7Hdaur_ro3ImcoYWNrzjolJg',
+    appId: '1:585585062118:web:46b4c745a939036edccb27',
+    messagingSenderId: '585585062118',
+    projectId: 'dompetkampusglobal',
+    authDomain: 'dompetkampusglobal.firebaseapp.com',
+    storageBucket: 'dompetkampusglobal.firebasestorage.app',
+    measurementId: 'G-EM8184H60G',
   );
 }
