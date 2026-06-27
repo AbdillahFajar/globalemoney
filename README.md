@@ -1,9 +1,5 @@
 # 📱 Dompet Kampus Global — Aplikasi E-Money Ekosistem Kampus
 
-[![Flutter]](https://flutter.dev)
-[![Go / Gin]](https://go.dev)
-[![Clean Architecture]](#arsitektur-aplikasi)
-
 Dompet Kampus Global adalah platform *e-money* terintegrasi yang dirancang khusus untuk mendigitalisasi seluruh ekosistem transaksi finansial di lingkungan area Kampus Global. Aplikasi ini mempermudah civitas akademika dalam melakukan pembayaran kuliah, transfer dana antarmahasiswa, hingga transaksi harian di kantin kampus secara cepat, aman, dan *cashless*.
 
 ---
