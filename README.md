@@ -223,4 +223,4 @@ Berikut adalah tampilan antarmuka pengguna (UI) dari aplikasi **Dompet Kampus Gl
 
 ## 🎥 Link Video Presentasi
 
-*(Bagian ini akan diperbarui dengan tautan demo aplikasi atau video presentasi YouTube)*
+**[Implementasi Deeplink pada Aplikasi E-Commerce dan E-Money](https://youtu.be/6snwAnRGqAY?si=dTJ8qCzCjaxD8mPs)**
