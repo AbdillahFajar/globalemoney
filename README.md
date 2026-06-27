@@ -17,7 +17,7 @@ Aplikasi ini hadir sebagai solusi finansial internal kampus yang menghubungkan m
 
 ---
 
-## 🏗️ Arsitektur Aplikasi
+## 🏗️ Arsitektur Aplikasi (Frontend)
 
 Proyek frontend ini mengimplementasikan **Clean Architecture** yang dikombinasikan dengan state management **BLoC**. Struktur ini memisahkan kode menjadi lapisan yang jelas (*Separation of Concerns*) sehingga sangat mudah diuji (*testable*) dan dikembangkan oleh tim.
 
@@ -46,6 +46,29 @@ lib/
     ├── blocs/          # Manajemen status aplikasi (State Management)
     ├── pages/          # Layanan halaman layar penuh (Screens)
     └── widgets/        # Komponen UI kecil yang dapat digunakan kembali
+```
+---
+
+## 🏗️ Arsitektur Aplikasi
+
+Proyek backend Dompet Kampus Global ini mengimplementasikan pola arsitektur **Layered Architecture** standar yang memisahkan tanggung jawab setiap komponen kode (*Separation of Concerns*). Pemisahan ini memastikan alur data finansial berjalan secara aman, terisolasi, dan mudah untuk dilakukan pelacakan ketika terjadi kesalahan sistem.
+
+```text
+.
+├── config/             # Konfigurasi aplikasi (seperti inisialisasi env load atau sistem eksternal)
+├── database/           # Pengaturan koneksi database MySQL, konfigurasi ORM, dan migrasi skema
+├── handlers/           # Lapisan Controller / HTTP handler untuk memproses request & response API
+├── middleware/         # Fungsi penengah global (seperti autentikasi JWT token, CORS, dan recovery)
+├── models/             # Struktur data (struct) entitas bisnis dan representasi tabel database
+├── postman/            # Kumpulan file JSON koleksi API Postman untuk kebutuhan dokumentasi & testing
+├── routes/             # Tempat pendaftaran dan manajemen definisi endpoint API (Routing Gin)
+├── services/           # Lapisan logika bisnis inti aplikasi (Business Logic Layer)
+├── .env                # Berkas konfigurasi rahasia berisi variabel lingkungan lokal
+├── .gitignore          # Daftar file/folder yang diabaikan dan tidak akan di-push ke repositori Git
+├── dompetkampusglobal.json # Berkas kredensial Firebase Service Account untuk fitur Firebase Admin SDK
+├── go.mod              # Berkas manajer dependensi utama untuk modul ekosistem Go
+├── go.sum              # Catatan penguncian checksum versi modul dependensi Go agar tetap konsisten
+└── main.go             # Titik masuk utama (Entry Point) untuk menjalankan server backend e-money
 ```
 
 ---
