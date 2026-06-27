@@ -176,7 +176,25 @@ Berdasarkan target spesifikasi SDK Flutter (`>=3.0.0 <4.0.0`), berikut adalah ko
 
 ## 📸 Screenshot Aplikasi
 
-*(Bagian ini akan diperbarui setelah proses pengembangan UI selesai dilakukan)*
+Berikut adalah tampilan antarmuka pengguna (UI) dari aplikasi **Dompet Kampus Global**:
+
+### 🔐 Autentikasi & Keamanan
+
+| Splash Page | Login Page | 2FA SMTP Page |
+| :---: | :---: | :---: |
+| <img src="screenshots/splash_page.jpeg" width="240" alt="Splash Screen"> | <img src="screenshots/login_page.jpeg" width="240" alt="Login Screen"> | <img src="screenshots/2fa_smtp_page.jpeg" width="240" alt="2FA SMTP Verification"> |
+
+### 💳 Beranda & Fitur Finansial
+
+| Homepage | Top Up Page | History Page |
+| :---: | :---: | :---: |
+| <img src="screenshots/home_page.jpeg" width="240" alt="Main Dashboard"> | <img src="screenshots/top_up_page.jpeg" width="240" alt="Top Up Balance"> | <img src="screenshots/history_page.jpeg" width="240" alt="Transaction History"> |
+
+### 🎁 Informasi & Profil
+
+| Promo Page | Account Page |
+| :---: | :---: |
+| <img src="screenshots/promo_page.jpeg" width="240" alt="Promo & Diskon"> | <img src="screenshots/account_page.jpeg" width="240" alt="User Account Profile"> |
 
 ---
 
