@@ -49,7 +49,7 @@ lib/
 ```
 ---
 
-## 🏗️ Arsitektur Aplikasi
+## 🏗️ Arsitektur Aplikasi (Backend)
 
 Proyek backend Dompet Kampus Global ini mengimplementasikan pola arsitektur **Layered Architecture** standar yang memisahkan tanggung jawab setiap komponen kode (*Separation of Concerns*). Pemisahan ini memastikan alur data finansial berjalan secara aman, terisolasi, dan mudah untuk dilakukan pelacakan ketika terjadi kesalahan sistem.
 
