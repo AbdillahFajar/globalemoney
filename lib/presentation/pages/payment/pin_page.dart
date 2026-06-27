@@ -377,6 +377,7 @@ class _PinPageState extends State<PinPage> {
               icon: header.icon, tone: header.tone, size: 74, iconSize: 36),
           const SizedBox(height: 18),
           Text(header.title,
+              textAlign: TextAlign.center,
               style: const TextStyle(
                 fontFamily: 'PlusJakartaSans',
                 fontSize: 23,
