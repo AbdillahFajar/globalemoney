@@ -65,10 +65,10 @@ Seluruh ekosistem Dompet Kampus Global dan platform kantin pendukungnya terbagi 
 ### 1. Kloning Repositori
 ```bash
 # Clone Frontend
-git clone https://github.com
+git clone https://github.com/AbdillahFajar/globalemoney
 
 # Clone Backend
-git clone https://github.com
+git clone https://github.com/AbdillahFajar/dompetkampusglobal-be
 ```
 
 ### 2. Menjalankan Backend (BE)
@@ -129,6 +129,7 @@ ipconfig
 #    dan perbarui `baseUrl` sesuai dengan IP Address Wi-Fi di atas.
 
 # 4. Hubungkan HP menggunakan kabel data (Aktifkan Developer Mode & USB Debugging)
+
 # 5. Jalankan perintah ADB port forwarding untuk menjamin konektivitas lokal
 adb reverse tcp:8081 tcp:8081
 adb devices
