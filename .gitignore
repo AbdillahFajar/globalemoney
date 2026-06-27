@@ -1,2 +1,4 @@
 
 .vscode/templates
+android\app\google-services.json
+build
