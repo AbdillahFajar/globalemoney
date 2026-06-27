@@ -284,8 +284,8 @@ class _GoogleIcon extends StatelessWidget {
     return SizedBox(
       width: 21,
       height: 21,
-      child: Image.network(
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/24px-Google_%22G%22_logo.svg.png',
+      child: Image.asset(
+        'assets/images/google_logo.png',
         errorBuilder: (_, __, ___) =>
             const Icon(Icons.g_mobiledata_rounded, size: 24, color: Colors.red),
       ),
