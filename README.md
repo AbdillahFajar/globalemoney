@@ -74,7 +74,7 @@ git clone https://github.com/AbdillahFajar/dompetkampusglobal-be
 ### 2. Menjalankan Backend (BE)
 Buat file `.env` di direktori root backend dan isi konfigurasi berikut:
 ```env
-APP_PORT=
+APP_PORT=8081
 DB_HOST=
 DB_PORT=
 DB_USER=
