@@ -10,7 +10,7 @@ class FeatureIcon extends StatelessWidget {
   const FeatureIcon({
     super.key,
     required this.icon,
-    this.tone = 'blue',
+    this.tone = 'yellow',
     this.size = 52,
     this.iconSize = 25,
   });

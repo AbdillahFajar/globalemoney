@@ -5,7 +5,7 @@ class AppBadge extends StatelessWidget {
   final String label;
   final String tone;
 
-  const AppBadge({super.key, required this.label, this.tone = 'blue'});
+  const AppBadge({super.key, required this.label, this.tone = 'yellow'});
 
   @override
   Widget build(BuildContext context) {

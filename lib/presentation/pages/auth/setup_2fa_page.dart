@@ -9,7 +9,7 @@ const _twoFaMethods = [
   _TwoFaMethod(
     key: 'smtp',
     icon: DkgIcons.mail,
-    tone: 'blue',
+    tone: 'yellow',
     title: 'Email OTP (SMTP)',
     desc: 'Kode 6 digit dikirim ke email kamu setiap kali masuk.',
     route: '/2fa/smtp',

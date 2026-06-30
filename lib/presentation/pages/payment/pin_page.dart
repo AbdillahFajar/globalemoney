@@ -467,7 +467,7 @@ class _PinPageState extends State<PinPage> {
       case AppConstants.twoFaSmtp:
         return (
           icon: DkgIcons.mail,
-          tone: 'blue',
+          tone: 'yellow',
           title: 'Masukkan Kode OTP Email',
           subtitle:
               'Kode 6 digit dikirim ke email kamu via SMTP untuk konfirmasi pembayaran.',

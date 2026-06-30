@@ -20,7 +20,7 @@ class _TopUpPageState extends State<TopUpPage> {
 
   final _chips = [50000.0, 100000.0, 200000.0, 500000.0, 1000000.0];
   final _methods = [
-    {'id': 'bca', 'name': 'BCA Virtual Account', 'tone': 'blue', 'icon': Icons.account_balance_outlined},
+    {'id': 'bca', 'name': 'BCA Virtual Account', 'tone': 'yellow', 'icon': Icons.account_balance_outlined},
     {'id': 'card', 'name': 'Kartu Debit/Kredit', 'tone': 'violet', 'icon': Icons.credit_card_outlined},
     {'id': 'alfa', 'name': 'Alfamart / Indomaret', 'tone': 'red', 'icon': Icons.storefront_outlined},
   ];

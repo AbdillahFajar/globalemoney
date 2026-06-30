@@ -111,7 +111,7 @@ class _HomePageState extends State<HomePage> {
                                     width: 8,
                                     height: 8,
                                     decoration: BoxDecoration(
-                                      color: AppColors.amber,
+                                      color: AppColors.red,
                                       shape: BoxShape.circle,
                                       border: Border.all(color: Colors.white, width: 2),
                                     ),
@@ -124,13 +124,13 @@ class _HomePageState extends State<HomePage> {
                       ),
                       // Balance Card (overlaps the header's bottom edge)
                       Transform.translate(
-                        offset: const Offset(0, -46),
+                        offset: const Offset(0, -20),
                         child: Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 16),
                           child: _buildBalanceCard(balance, loading),
                         ),
                       ),
-                      const SizedBox(height: 14),
+                      // const SizedBox(height: 14),
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16),
                         child: _buildPointsRow(),
@@ -140,11 +140,11 @@ class _HomePageState extends State<HomePage> {
                         padding: const EdgeInsets.symmetric(horizontal: 16),
                         child: _buildFeatureGrid(),
                       ),
-                      const SizedBox(height: 16),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16),
-                        child: _buildDeeplinkBanner(),
-                      ),
+                      // const SizedBox(height: 16),
+                      // Padding(
+                      //   padding: const EdgeInsets.symmetric(horizontal: 16),
+                      //   child: _buildDeeplinkBanner(),
+                      // ),
                       const SizedBox(height: 22),
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -164,7 +164,7 @@ class _HomePageState extends State<HomePage> {
 
   Widget _buildBalanceCard(double balance, bool loading) {
     final actions = [
-      {'icon': Icons.north_rounded, 'label': 'Top Up', 'tone': 'blue', 'route': '/topup'},
+      {'icon': Icons.north_rounded, 'label': 'Top Up', 'tone': 'yellow', 'route': '/topup'},
       {'icon': Icons.send_rounded, 'label': 'Transfer', 'tone': 'green', 'route': '/transfer'},
       {'icon': Icons.qr_code_rounded, 'label': 'Bayar', 'tone': 'violet', 'route': '/payment'},
       {'icon': Icons.south_rounded, 'label': 'Tarik', 'tone': 'amber', 'route': '/topup'},
@@ -333,7 +333,7 @@ class _HomePageState extends State<HomePage> {
             child: Row(
               children: [
                 const FeatureIcon(
-                    icon: Icons.qr_code_rounded, tone: 'green', size: 38, iconSize: 19),
+                    icon: Icons.qr_code_rounded, tone: 'yellow', size: 38, iconSize: 19),
                 const SizedBox(width: 10),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -362,7 +362,7 @@ class _HomePageState extends State<HomePage> {
 
   Widget _buildFeatureGrid() {
     final features = [
-      {'icon': Icons.smartphone_outlined, 'label': 'Pulsa', 'tone': 'blue'},
+      {'icon': Icons.smartphone_outlined, 'label': 'Pulsa', 'tone': 'yellow'},
       {'icon': Icons.bolt_outlined, 'label': 'PLN', 'tone': 'amber'},
       {'icon': Icons.restaurant_outlined, 'label': 'Kantin', 'tone': 'red'},
       {'icon': Icons.receipt_long_outlined, 'label': 'UKT', 'tone': 'violet'},
@@ -408,75 +408,75 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Widget _buildDeeplinkBanner() {
-    return GestureDetector(
-      onTap: () => context.go('/merchant'),
-      child: Container(
-        decoration: BoxDecoration(
-          gradient: const LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [Color(0xFF0E1726), Color(0xFF21314D)],
-          ),
-          borderRadius: BorderRadius.circular(20),
-        ),
-        padding: const EdgeInsets.all(16),
-        child: Stack(
-          clipBehavior: Clip.none,
-          children: [
-            Positioned(
-              right: -30,
-              top: -40,
-              child: Container(
-                width: 120,
-                height: 120,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: const Color(0xFF5B9BFF).withValues(alpha: 0.18),
-                ),
-              ),
-            ),
-            Row(
-              children: [
-                Container(
-                  width: 46,
-                  height: 46,
-                  decoration: BoxDecoration(
-                    color: Colors.white.withValues(alpha: 0.12),
-                    borderRadius: BorderRadius.circular(14),
-                  ),
-                  child: const Icon(Icons.link_rounded, size: 24, color: Color(0xFF5B9BFF)),
-                ),
-                const SizedBox(width: 13),
-                const Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('Coba bayar dari toko online',
-                          style: TextStyle(
-                            fontFamily: 'PlusJakartaSans',
-                            fontSize: 14.5,
-                            fontWeight: FontWeight.w700,
-                            color: Colors.white,
-                          )),
-                      SizedBox(height: 2),
-                      Text('Simulasi checkout e-commerce → bayar via DKG',
-                          style: TextStyle(
-                            fontFamily: 'PlusJakartaSans',
-                            fontSize: 12.5,
-                            color: Colors.white70,
-                          )),
-                    ],
-                  ),
-                ),
-                const Icon(Icons.chevron_right_rounded, size: 20, color: Colors.white60),
-              ],
-            ),
-          ],
-        ),
-      ),
-    );
-  }
+  // Widget _buildDeeplinkBanner() {
+  //   return GestureDetector(
+  //     onTap: () => context.go('/merchant'),
+  //     child: Container(
+  //       decoration: BoxDecoration(
+  //         gradient: const LinearGradient(
+  //           begin: Alignment.topLeft,
+  //           end: Alignment.bottomRight,
+  //           colors: [Color(0xFF0E1726), Color(0xFF21314D)],
+  //         ),
+  //         borderRadius: BorderRadius.circular(20),
+  //       ),
+  //       padding: const EdgeInsets.all(16),
+  //       child: Stack(
+  //         clipBehavior: Clip.none,
+  //         children: [
+  //           Positioned(
+  //             right: -30,
+  //             top: -40,
+  //             child: Container(
+  //               width: 120,
+  //               height: 120,
+  //               decoration: BoxDecoration(
+  //                 shape: BoxShape.circle,
+  //                 color: const Color(0xFF5B9BFF).withValues(alpha: 0.18),
+  //               ),
+  //             ),
+  //           ),
+  //           Row(
+  //             children: [
+  //               Container(
+  //                 width: 46,
+  //                 height: 46,
+  //                 decoration: BoxDecoration(
+  //                   color: Colors.white.withValues(alpha: 0.12),
+  //                   borderRadius: BorderRadius.circular(14),
+  //                 ),
+  //                 child: const Icon(Icons.link_rounded, size: 24, color: Color(0xFF5B9BFF)),
+  //               ),
+  //               const SizedBox(width: 13),
+  //               const Expanded(
+  //                 child: Column(
+  //                   crossAxisAlignment: CrossAxisAlignment.start,
+  //                   children: [
+  //                     Text('Coba bayar dari toko online',
+  //                         style: TextStyle(
+  //                           fontFamily: 'PlusJakartaSans',
+  //                           fontSize: 14.5,
+  //                           fontWeight: FontWeight.w700,
+  //                           color: Colors.white,
+  //                         )),
+  //                     SizedBox(height: 2),
+  //                     Text('Simulasi checkout e-commerce → bayar via DKG',
+  //                         style: TextStyle(
+  //                           fontFamily: 'PlusJakartaSans',
+  //                           fontSize: 12.5,
+  //                           color: Colors.white70,
+  //                         )),
+  //                   ],
+  //                 ),
+  //               ),
+  //               const Icon(Icons.chevron_right_rounded, size: 20, color: Colors.white60),
+  //             ],
+  //           ),
+  //         ],
+  //       ),
+  //     ),
+  //   );
+  // }
 
   Widget _buildTransactions(List<TransactionEntity> txns) {
     return Column(

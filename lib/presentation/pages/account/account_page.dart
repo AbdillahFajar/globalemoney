@@ -121,7 +121,7 @@ class AccountPage extends StatelessWidget {
                             const Divider(height: 1, indent: 56, color: AppColors.line2),
                             _Row(
                               icon: Icons.lock_outline_rounded,
-                              tone: 'blue',
+                              tone: 'yellow',
                               title: 'Ubah PIN keamanan',
                               subtitle: 'Terakhir diubah 2 bln lalu',
                               onTap: () {},
@@ -157,7 +157,7 @@ class AccountPage extends StatelessWidget {
                         ),
                         child: Column(
                           children: [
-                            _Row(icon: Icons.person_outline_rounded, tone: 'blue', title: 'Data pribadi', onTap: () {}),
+                            _Row(icon: Icons.person_outline_rounded, tone: 'yellow', title: 'Data pribadi', onTap: () {}),
                             const Divider(height: 1, indent: 56, color: AppColors.line2),
                             _Row(icon: Icons.account_balance_outlined, tone: 'green', title: 'Rekening & kartu tersimpan', onTap: () {}),
                             const Divider(height: 1, indent: 56, color: AppColors.line2),

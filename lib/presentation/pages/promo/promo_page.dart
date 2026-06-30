@@ -9,34 +9,47 @@ class PromoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final promos = [
-      {'t': 'Cashback 30% di Kantin Kampus', 'd': 'Maks. Rp10.000 · s.d. 30 Jun', 'tone': 'red', 'icon': Icons.restaurant_outlined},
-      {'t': 'Gratis biaya transfer antarbank', 'd': 'Setiap Jumat · semua bank', 'tone': 'green', 'icon': Icons.send_rounded},
-      {'t': 'Diskon UKT 0% cicilan 6 bulan', 'd': 'Khusus pengguna baru', 'tone': 'violet', 'icon': Icons.receipt_long_outlined},
-      {'t': 'Bonus 5.000 poin top up pertama', 'd': 'Min. Rp50.000', 'tone': 'amber', 'icon': Icons.star_outline_rounded},
+      {
+        't': 'Cashback 30% di Kantin Kampus',
+        'd': 'Maks. Rp10.000 · s.d. 30 Jun',
+        'tone': 'red',
+        'icon': Icons.restaurant_outlined
+      },
+      {
+        't': 'Gratis biaya transfer antarbank',
+        'd': 'Setiap Jumat · semua bank',
+        'tone': 'green',
+        'icon': Icons.send_rounded
+      },
+      {
+        't': 'Diskon UKT 0% cicilan 6 bulan',
+        'd': 'Khusus pengguna baru',
+        'tone': 'violet',
+        'icon': Icons.receipt_long_outlined
+      },
+      {
+        't': 'Bonus 5.000 poin top up pertama',
+        'd': 'Min. Rp50.000',
+        'tone': 'amber',
+        'icon': Icons.star_outline_rounded
+      },
     ];
 
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Promo & Reward',
+            textAlign: TextAlign.left,
+            style: TextStyle(
+              fontFamily: 'PlusJakartaSans',
+              fontSize: 22,
+              fontWeight: FontWeight.w800,
+              color: AppColors.ink,
+              letterSpacing: -0.3,
+            )),
+      ),
       backgroundColor: AppColors.bg,
       body: Column(
         children: [
-          Container(
-            color: Colors.white,
-            padding: EdgeInsets.fromLTRB(20, MediaQuery.of(context).padding.top + 12, 20, 18),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
-                Text('Promo & Reward',
-                    style: TextStyle(
-                      fontFamily: 'PlusJakartaSans',
-                      fontSize: 22,
-                      fontWeight: FontWeight.w800,
-                      color: AppColors.ink,
-                      letterSpacing: -0.3,
-                    )),
-                Divider(height: 18, color: AppColors.line2),
-              ],
-            ),
-          ),
           Expanded(
             child: ListView(
               padding: const EdgeInsets.all(16),
@@ -99,7 +112,11 @@ class PromoPage extends StatelessWidget {
                       padding: const EdgeInsets.all(14),
                       child: Row(
                         children: [
-                          FeatureIcon(icon: p['icon'] as IconData, tone: p['tone'] as String, size: 50, iconSize: 24),
+                          FeatureIcon(
+                              icon: p['icon'] as IconData,
+                              tone: p['tone'] as String,
+                              size: 50,
+                              iconSize: 24),
                           const SizedBox(width: 13),
                           Expanded(
                             child: Column(

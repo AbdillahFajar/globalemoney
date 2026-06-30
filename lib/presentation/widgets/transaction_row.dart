@@ -72,10 +72,10 @@ class TransactionRow extends StatelessWidget {
 
   (IconData, String) _resolveIcon(String desc) {
     final d = desc.toLowerCase();
-    if (d.contains('top up') || d.contains('topup')) return (DkgIcons.topup, 'blue');
+    if (d.contains('top up') || d.contains('topup')) return (DkgIcons.topup, 'yellow');
     if (d.contains('transfer')) return (DkgIcons.send, 'green');
     if (d.contains('qris') || d.contains('bayar')) return (DkgIcons.qris, 'violet');
-    if (d.contains('pulsa')) return (DkgIcons.pulsa, 'blue');
+    if (d.contains('pulsa')) return (DkgIcons.pulsa, 'yellow');
     if (d.contains('tokobel') || d.contains('toko')) return (DkgIcons.store, 'amber');
     return (DkgIcons.wallet, 'slate');
   }

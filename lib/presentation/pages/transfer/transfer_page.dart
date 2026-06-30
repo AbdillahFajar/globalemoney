@@ -15,10 +15,10 @@ const _contacts = [
 ];
 
 const _banks = [
-  {'id': 'bca', 'name': 'BCA', 'sub': 'Bank Central Asia', 'tone': 'blue'},
+  {'id': 'bca', 'name': 'BCA', 'sub': 'Bank Central Asia', 'tone': 'yellow'},
   {'id': 'bni', 'name': 'BNI', 'sub': 'Bank Negara Indonesia', 'tone': 'amber'},
-  {'id': 'mandiri', 'name': 'Mandiri', 'sub': 'Bank Mandiri', 'tone': 'blue'},
-  {'id': 'bri', 'name': 'BRI', 'sub': 'Bank Rakyat Indonesia', 'tone': 'blue'},
+  {'id': 'mandiri', 'name': 'Mandiri', 'sub': 'Bank Mandiri', 'tone': 'yellow'},
+  {'id': 'bri', 'name': 'BRI', 'sub': 'Bank Rakyat Indonesia', 'tone': 'yellow'},
 ];
 
 class TransferPage extends StatefulWidget {
