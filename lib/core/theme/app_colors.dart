@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  // Primary Blue
-  static const Color primary = Color(0xFF0B63E5);
-  static const Color primaryLight = Color(0xFF2C8BFF);
-  static const Color primaryDark = Color(0xFF0A4FBF);
-  static const Color primarySurface = Color(0xFFE8F1FD);
-  static const Color primaryBorder = Color(0xFFB8D0F7);
+  // Primary Yellow (warna dominan baru, dari logo)
+  static const Color primary = Color(0xFFF5A623);
+  static const Color primaryLight = Color(0xFFFFC247);
+  static const Color primaryDark = Color(0xFFD98512);
+  static const Color primarySurface = Color(0xFFFDF3E3);
+  static const Color primaryBorder = Color(0xFFF7D9A0);
 
   // Semantic
   static const Color green = Color(0xFF16A571);
@@ -65,7 +65,7 @@ class AppColors {
 
   // Tone map for FeatureIcon
   static Map<String, List<Color>> tones = {
-    'blue': [primarySurface, primary],
+    'yellow': [primarySurface, primary],
     'green': [greenSurface, green],
     'amber': [amberSurface, amber],
     'red': [redSurface, red],
@@ -73,5 +73,5 @@ class AppColors {
     'slate': [bg, slate600],
   };
 
-  static List<Color> tone(String name) => tones[name] ?? tones['blue']!;
+  static List<Color> tone(String name) => tones[name] ?? tones['yellow']!;
 }
